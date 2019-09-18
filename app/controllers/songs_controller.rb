@@ -34,5 +34,8 @@ class SongsController < ApplicationController
     redirect to "/songs/#{@song.slug}"
   end
 
+  get '/songs/:slug/edit' do
+    erb :'/songs/edit'
+  end
 
 end
